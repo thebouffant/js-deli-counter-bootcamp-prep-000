@@ -1,6 +1,6 @@
 
 function takeANumber(queue, newCustomer){
-  var newQueue = queue.length + 1
+  queue.push(newCustomer)
   queue[queue.length] = newCustomer
   
   return `Welcome, ${newCustomer}. You are number ${newQueue} in line.`
