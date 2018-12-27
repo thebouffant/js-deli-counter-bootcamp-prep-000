@@ -5,7 +5,7 @@ function takeANumber(queue, newCustomer){
 }
 
 function nowServing(currentLine){
-  if (currentLine.length === 0){
+  if (!currentLine.length){
     return "There is nobody waiting to be served!"
   } else{
     var currentCust = currentLine[0]
